@@ -2,7 +2,7 @@
 
 set -e
 
-mkdir /var/lib/chksshpwd/
+mkdir -p /var/lib/chksshpwd/
 if dpkg --compare-versions "$2" lt 1.1.8; then
 	pam-auth-update --package
 fi
